@@ -26,92 +26,91 @@
     </nav>
     <div class="header">
         <h1>Welcome to Books</h1>
-        <div class="container">
-            <div class="row">
-                <div id="userform" class="col-md-6">
-                    <form action="" method="post"></form><img src="http://websamplenow.com/30/userprofile/images/avatar.jpg" class="img-responsive img-thumbnail">
-                    <div class="form-group">
-                        <div class="fileinput"><a href="javascript:;" class="btn btn-primary">Choose File...
-                  <input type="file" style="position:absolute;opacity:0;transparent;" name="file_source" size="40" onchange="$(&quot;#upload-file-info&quot;).html($(this).val());"></a><span id="upload-file-info" class="label label-info"></span></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="firstname" class="col form-control-label">FirstName
-                <div class="input-group">
-                  <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                  <input id="username" name="firstname" type="text" placeholder="firstname" class="form-control input">
+        <div class="container"></div>
+        <div class="row">
+            <div id="userform" class="col-md-6">
+                <form action="" method="post"></form><img src="http://websamplenow.com/30/userprofile/images/avatar.jpg" class="img-responsive img-thumbnail">
+                <div class="form-group">
+                    <div class="fileinput"><a href="javascript:;" class="btn btn-primary">Choose File...
+                <input type="file" style="position:absolute;opacity:0;transparent;" name="file_source" size="40" onchange="$(&quot;#upload-file-info&quot;).html($(this).val());"></a><span id="upload-file-info" class="label label-info"></span></div>
                 </div>
-              </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="username" class="col form-control-label">Username
-                <div class="input-group">
-                  <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                  <input id="username" name="username" type="text" placeholder="username" class="form-control input">
+                <div class="form-group">
+                    <label for="firstname" class="col form-control-label">FirstName
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                <input id="username" name="firstname" type="text" placeholder="firstname" class="form-control input">
+              </div>
+            </label>
                 </div>
-              </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="oldpassword" class="col form-control-label">Old Password
-                <div class="input-group">
-                  <div class="input-group-addon"><i class="fa fa-key"></i></div>
-                  <input id="username" name="oldpassword" type="password" placeholder="oldpassword" class="form-control input">
+                <div class="form-group">
+                    <label for="username" class="col form-control-label">Username
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                <input id="username" name="username" type="text" placeholder="username" class="form-control input">
+              </div>
+            </label>
                 </div>
-              </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="newpassword" class="col form-control-label">New Password
-                <div class="input-group">
-                  <div class="input-group-addon"><i class="fa fa-key"></i></div>
-                  <input id="username" name="newpassword" type="password" placeholder="newpassword" class="form-control input">
+                <div class="form-group">
+                    <label for="oldpassword" class="col form-control-label">Old Password
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-key"></i></div>
+                <input id="username" name="oldpassword" type="password" placeholder="oldpassword" class="form-control input">
+              </div>
+            </label>
                 </div>
-              </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="confirmpassword" class="col form-control-label">Confirm New Password
-                <div class="input-group">
-                  <div class="input-group-addon"><i class="fa fa-key"></i></div>
-                  <input id="username" name="confirmpassword" type="password" placeholder="confirmpassword" class="form-control input">
+                <div class="form-group">
+                    <label for="newpassword" class="col form-control-label">New Password
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-key"></i></div>
+                <input id="username" name="newpassword" type="password" placeholder="newpassword" class="form-control input">
+              </div>
+            </label>
                 </div>
-              </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="col form-control-label">Email
-                <div class="input-group">
-                  <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-                  <input id="username" name="email" type="email" placeholder="email" class="form-control input">
+                <div class="form-group">
+                    <label for="confirmpassword" class="col form-control-label">Confirm New Password
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-key"></i></div>
+                <input id="username" name="confirmpassword" type="password" placeholder="confirmpassword" class="form-control input">
+              </div>
+            </label>
                 </div>
-              </label>
-                    </div><a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span> Submit</a>
+                <div class="form-group">
+                    <label for="email" class="col form-control-label">Email
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                <input id="username" name="email" type="email" placeholder="email" class="form-control input">
+              </div>
+            </label>
+                </div><a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span> Submit</a>
+            </div>
+            <div class="col-md-6">
+                <div class="dropdown">
+                    <button id="displaylist" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary dropdown-toggle">User Select</button>
+                    <div aria-labelledby="displaylist" class="dropdown-menu">
+                        <button type="button" class="dropdown-item">Books</button>
+                        <button type="button" class="dropdown-item">My Books</button>
+                        <button type="button" class="dropdown-item">Loan History</button>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="dropdown">
-                        <button id="displaylist" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary dropdown-toggle">User Select</button>
-                        <div aria-labelledby="displaylist" class="dropdown-menu">
-                            <button type="button" class="dropdown-item">Books</button>
-                            <button type="button" class="dropdown-item">My Books</button>
-                            <button type="button" class="dropdown-item">Loan History</button>
-                        </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Populate Panel</h3>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Populate Panel</h3>
-                        </div>
-                        <div class="panel-body">This is a Basic panel</div>
-                        <table class="table">
-                            <tr></tr>
-                            <th>Library Books</th>
-                            <th>Author</th>
-                            <th>Category</th>
-                            <tr></tr>
-                            <td>Book 1</td>
-                            <td>Ben</td>
-                            <td>Horror</td>
-                            <tr></tr>
-                            <td>Book2</td>
-                            <td>Ben2</td>
-                            <td>Romance</td>
-                        </table>
-                    </div>
+                    <div class="panel-body">This is a Basic panel</div>
+                    <table class="table">
+                        <tr></tr>
+                        <th>Library Books</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <tr></tr>
+                        <td>Book 1</td>
+                        <td>Ben</td>
+                        <td>Horror</td>
+                        <tr></tr>
+                        <td>Book2</td>
+                        <td>Ben2</td>
+                        <td>Romance</td>
+                    </table>
                 </div>
             </div>
         </div>
