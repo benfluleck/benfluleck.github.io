@@ -9,6 +9,10 @@ body {
     flex-direction: column;
 }
 
+.container {
+    width: 75%;
+}
+
 .card-deck {
     color: rgba(0, 0, 0, .5);
 }
