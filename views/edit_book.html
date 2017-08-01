@@ -15,16 +15,17 @@
     <body>
         <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse fixed-top">
             <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <a class="navbar-brand" href="#">Admin</a>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Visit Site</a></li>
-                </ul>
-                <div class="dropdown default"><a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Logout</a></div>
+            <a
+                class="navbar-brand" href="#">Admin</a>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Visit Site</a></li>
+                    </ul>
+                    <div class="dropdown default"><a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Logout</a></div>
+                    </div>
                 </div>
-            </div>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -47,6 +48,10 @@
                             <hr/>
                         </div>
                     </div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" />
+                        <button class="btn btn-outline-primary my-2 my-sm-2" type="submit">Search</button>
+                    </form>
                     <form class="form-horizontal" role="form" method="POST" action="/">
                         <div class="row">
                             <div class="col-md-3 field-label-responsive">
@@ -121,21 +126,29 @@
                         </div>
                     </form>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"><img class="img-responsive img-thumbnail" src="http://websamplenow.com/30/userprofile/images/avatar.jpg" />
                             <div class="form-group">
-                                <label for="exampleInputFile">File input</label>
-                                <input class="form-control-file" id="exampleInputFile" type="file" aria-describedby="fileHelp" /><small class="form-text text-muted" id="fileHelp">Upload a picture of the book unto the server.         </small>
+                                <div class="fileinput"><a class="btn btn-primary" href="javascript:;">Choose File...
+                    <input type="file" style="position:absolute;opacity:0;transparent;" name="file_source" size="40" onchange="$(&quot;#upload-file-info&quot;).html($(this).val());"/></a><span class="label label-info" id="upload-file-info"></span></div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-control-feedback"></div><span class="text-danger align-middle">
-                <!-- Put e-mail validation error messages here--></span>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3"></div>
+                        <div class="col-md-3 field-label-responsive">
+                            <label for="edit_delete">Select Action</label>
+                        </div>
                         <div class="col-md-6">
-                            <button class="btn btn-primary" type="submit"><i class="fa fa-user-plus"></i> Create Book</button>
+                            <div class="form-group">
+                                <div class="input-group mb-2 mr-sm-2 mb-sm-2">
+                                    <div class="input-group-addon" style="width: 2.6rem;"><i class="fa fa-book"></i></div>
+                                    <button class="form-control btn-default dropdown-toggle" id="edit_delete" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="caret"></span></button>
+                                    <ul class="dropdown-menu" aria-labelledby="edit_delete">
+                                        <li>Delete</li>
+                                        <li>Update</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="foot text-xs-center" id="footer">&#169;Benny in Patnership with Andela</div>
@@ -144,7 +157,7 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="/javascripts/bootstrap-imageupload.min.js"></script>
-        <script src="/javascripts/data-toggle.js"></script>
+        <script src="public/javascripts/data-toggle.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </body>
