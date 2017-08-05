@@ -37,13 +37,17 @@ a:hover {
 }
 
 .row {
-    padding-top: 1em;
+    padding-top: 0.25em;
     width: 100%
 }
 
 #userform {
     border: 1px solid;
-    padding-bottom: 1em;
+    padding-bottom: 1em
+}
+
+.img-thumbnail {
+    margin-top: 0.5em;
 }
 
 .panel-heading {
@@ -82,7 +86,7 @@ h4 {
 /* Modifier Styles */
 
 .nav-items .nav-link {
-    margin: 0 1rem;
+    margin: 0 0.15rem;
 }
 
 .navbar-brand {
@@ -107,6 +111,10 @@ h4 {
 
 #testbook {
     width: inherit;
+}
+
+hr {
+    color: white;
 }
 
 
@@ -137,9 +145,14 @@ h4 {
     background: rgba(255, 255, 255, .2);
 }
 
+.text-muted {
+    color: rgba(210, 57, 57, 0.77)
+}
+
 .btn-social {
     text-align: center;
     color: whitesmoke;
+    margin-top: 0.5em
 }
 
 .active,
@@ -166,6 +179,10 @@ h4 {
     color: initial;
 }
 
+.lib-img-show {
+    padding-left: 1em;
+}
+
 .favorite-book {
     margin-top: 30px;
 }
@@ -176,7 +193,6 @@ h4 {
 
 .form-group a {
     font-size: 15;
-    
 }
 
 .form-group label {

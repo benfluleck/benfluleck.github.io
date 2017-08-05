@@ -17,8 +17,8 @@
         <nav class="navbar sticky-top navbar-dark bg-inverse">
             <button class="navbar-toggler hidden-md-up pull-xs-left" type="button" data-toggle="collapse" data-target="#navbar">&#x2630;</button>
             <div class="navbar-nav collapse navbar-toggleable-sm" id="navbar">
-                <div class="container pull-md-right">
-                    <div class="nav-items clearfix"><a class="nav-item nav-link" href="register.html">Sign Up</a><a class="nav-item nav-link" href="profile.html">My Profile</a><a class="nav-item nav-link" href="books.html">Books</a></div><a class="btn btn-info" href="index.html">Login</a>
+                <div class="container pull-sm-right">
+                    <div class="nav-items clearfix"><a class="nav-item nav-link" href="register.html">Sign Up</a><a class="nav-item nav-link" href="profile.html">My Profile</a><a class="nav-item nav-link active" href="books.html">Books</a><a class="nav-item nav-link " href="index.html">Login</a></div>
                 </div>
             </div>
         </nav>
@@ -26,68 +26,74 @@
             <h1></h1>
             <p>Welcome to
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-3">
-                            <div class="bootstrap-vertical-nav">
-                                <h3>Order By</h3>
-                                <ul class="nav flex-column" id="exCollapsingNavbar3">
-                                    <li class="nav-item"><a class="nav-link active" href="#">Purchase Date</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Author</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Quantity</a></li>
-                                </ul>
-                            </div>
+                    <div class="d-flex flex-row">
+                        <div class="col-md-6 col-lg-3">
+                            <h3>Order By</h3>
+                            <ul class="nav flex-column" id="exCollapsingNavbar3">
+                                <li class="nav-item"><a class="nav-link active" href="#">Purchase Date</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Author</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Quantity</a></li>
+                            </ul>
                         </div>
-                        <div class="col-md-8 col-lg-9">
-                            <h1>Books</h1>
-                            <hr class="my-4" />
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" id="displaylist" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Select</button>
-                                <div class="dropdown-menu" aria-labelledby="displaylist">
-                                    <button class="dropdown-item" type="button">All Books</button>
-                                    <button class="dropdown-item" type="button">All Available</button>
-                                    <button class="dropdown-item" type="button">Books on Loan</button>
+                        <div class="col-md-12 col-lg-8">
+                            <h2>Books</h2>
+                            <nav class="navbar sticky-top navbar-dark bg-inverse" style=" background: rgba(0, 0, 0, 0.25);">
+                                <div class="navbar-collapse" id="mainNav">
+                                    <div class="container nav-items clearfix pull-md-right">
+                                        <ul class="nav navbar-nav" id="booknav">
+                                            <li class="nav-item active">
+                                                <a class="nav-item nav-link" href="#">All Books <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-item nav-link" href="#">All Available</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Books on Loan</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row row-margin-bottom">
-                                <div class="col-sm-6 no-padding lib-item" data-category="view">
+                            </nav>
+                            <div class="row">
+                                <div class="test" data-category="view">
                                     <div class="lib-panel">
-                                        <div class="row box-shadow">
-                                            <div class="col-md-6"><img class="lib-img-show" src="public/images/book1.png" href="book.html" /></div>
-                                            <div class="col-md-6">
-                                                <div class="lib-row lib-header"></div>
-                                                <p>Title : The Chronicles of Andela</p>
-                                                <div class="lib-header-seperator"></div>
-                                                <div class="lib-row lib-desc"></div>
-                                                <p>Category : Horror</p>
-                                                <p>Author : J. J. Abrahams</p>
-                                                <p>Quantity : 10</p>
-                                            </div>
+                                        <div class="col-sm-3">
+                                            <div class="row box-shadow">
+                                                <img class="lib-img-show img-responsive" src="public/images/book1.png" href="book.html" /></div>
                                         </div>
+                                    </div>
+                                    <div class="col-md-6 d-flex flex-column">
+                                        <div class="lib-row lib-header">Title : The Chronicles of Benny</div>
+                                        <div class="lib-header-category">Category : Horror</div>
+                                        <div class="lib-row lib-author">Author : Stephen A. Smith</div>
+                                        <div class="lib-row lib-quantity">Quantity : 12</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row row-margin-bottom">
-                                <div class="col-sm-6 no-padding lib-item" data-category="view">
+                            <div class="row">
+                                <div class="test" data-category="view">
                                     <div class="lib-panel">
-                                        <div class="row box-shadow">
-                                            <div class="col-md-6"><img class="lib-img-show" src="public/images/book2.jpg" href="book.html" /></div>
-                                            <div class="col-md-6">
-                                                <div class="lib-row lib-header"></div>
-                                                <p>Title : The Chronicles of Andela</p>
-                                                <div class="lib-header-seperator"></div>
-                                                <div class="lib-row lib-desc"></div>
-                                                <p>Category : Horror</p>
-                                                <p>Author : J. J. Abrahams</p>
-                                                <p>Quantity : 10</p>
-                                            </div>
+                                        <div class="col-sm-3">
+                                            <div class="row box-shadow">
+                                                <img class="lib-img-show img-responsive" src="public/images/book2.jpg" href="book.html" /></div>
                                         </div>
+                                    </div>
+                                    <div class="col-md-6 d-flex flex-column">
+                                        <div class="lib-row lib-header">Title : The Chronicles of Andela</div>
+                                        <div class="lib-header-category">Category : Sci-Fi</div>
+                                        <div class="lib-row lib-author">Author : J. J. Abrahams</div>
+                                        <div class="lib-row lib-quantity">Quantity : 15</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
-            </p>
+        </div>
+        </div>
+        </p>
         </div>
         <!-- footer-->
         <div class="foot text-xs-center" id="footer">&#169;Benny in Patnership with Andela</div>
