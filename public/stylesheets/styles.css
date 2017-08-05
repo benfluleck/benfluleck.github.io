@@ -24,6 +24,10 @@ h1 {
     text-align: center;
 }
 
+.img {
+    z-index: 9999;
+}
+
 
 /*
  * Sidebar
