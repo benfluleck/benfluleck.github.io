@@ -146,7 +146,15 @@ hr {
 }
 
 .text-muted {
-    color: rgba(210, 57, 57, 0.77)
+    color: rgba(255, 255, 255, 0.2)
+}
+
+.list-group-item {
+    color: white;
+}
+
+.card-link {
+    color: red;
 }
 
 .btn-social {
